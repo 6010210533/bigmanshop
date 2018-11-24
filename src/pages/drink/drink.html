@@ -1,0 +1,73 @@
+<!--
+  Generated template for the DrinkPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>น้ำอัดลม</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="bg-style">
+    <!-- <img  src="../../assets/imgs/bannercoke.jpg" alt="Drink" height="200" width="400"> -->
+    <ion-grid>
+        <ion-row>
+          <ion-col>
+              <ion-list>
+            <img src="../../assets/imgs/pepsi.png">
+            <p>Pepsi</p>
+            <p>฿ 40/ขวด</p>
+                <ion-item>
+                  <ion-label>จำนวน</ion-label>
+                  <ion-input type="text" [(ngModel)]="shoppingItem.itemAmout" value="1"> ชิ้น</ion-input>
+                </ion-item>
+            </ion-list>
+            <p align ="right"><button class="btn-style" ion-button block (click)="orderpepsi(shoppingItem)">ใส่ตะกร้า</button></p>
+          </ion-col>
+          <ion-col>
+              <ion-list>
+                  <img src="../../assets/imgs/cokecola.jpg">
+                  <p>Coke-Cola</p>
+                  <p>฿ 40/ขวด</p>
+                      <ion-item>
+                        <ion-label>จำนวน</ion-label>
+                        <ion-input type="text" [(ngModel)]="shoppingItem.itemAmout" value="1"> ชิ้น</ion-input>
+                      </ion-item>
+                  </ion-list>
+                  <p align ="right"><button class="btn-style" ion-button block (click)="ordercoke(shoppingItem)">ใส่ตะกร้า</button></p>
+          
+          </ion-col>
+        
+        </ion-row>
+        <ion-row>
+          <ion-col>
+              <ion-list>
+                  <img src="../../assets/imgs/fanta.jpg">
+                  <p>Fanta</p>
+                  <p>฿ 40/ขวด</p>
+                      <ion-item>
+                        <ion-label>จำนวน</ion-label>
+                        <ion-input type="text" [(ngModel)]="shoppingItem.itemAmout" value="1"> ชิ้น</ion-input>
+                      </ion-item>
+                  </ion-list>
+                  <p align ="right"><button class="btn-style" ion-button block (click)="orderfanta(shoppingItem)">ใส่ตะกร้า</button></p>
+          </ion-col>
+          <ion-col>
+              <ion-list>
+                  <img src="../../assets/imgs/sprite.jpg">
+                  <p>Sprite</p>
+                  <p>฿ 40/ขวด</p>
+                      <ion-item>
+                        <ion-label>จำนวน</ion-label>
+                        <ion-input type="text" [(ngModel)]="shoppingItem.itemAmout" value="1"> ชิ้น</ion-input>
+                      </ion-item>
+                  </ion-list>
+                  <p align ="right"><button class="btn-style" ion-button block (click)="ordersprite(shoppingItem)">ใส่ตะกร้า</button></p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-content>

@@ -1,0 +1,42 @@
+<!--
+  Generated template for the BasketPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ตะกร้า</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="bg-style">
+    <div text-center>สินค้าในตะกร้า</div>
+
+    <ion-item *ngFor="let item of shoppingListRef$ | async" >
+            
+      <p>{{item.itemName}}</p> 
+      <p>{{item.itemAmout}}</p>
+      <p>{{item.itemCost}}</p>
+      <p>{{item.itemNamep}}</p> 
+      <p>{{item.itemSizep}}</p>
+      <p>{{item.itemEdgep}}</p>
+      <p>{{item.itemAmoutp}}</p>
+      <p>{{item.itemCostp}}</p>
+  
+      <div text-right>
+        <button ion-button class="btn-cancel" (click)="delete(item)">ลบ</button>
+        <button ion-button class="btn-style" (click)="editItem(item)">เเก้ไข</button>
+      </div>
+
+        </ion-item>
+      
+    <button ion-button block class="btn-cancel" (click) = "onClickDeleteAll()">ลบทั้งหมด</button>
+    <button ion-button block class="btn-style" (click) = "onClickPay()">ชำระเงิน</button>
+
+
+    
+</ion-content>

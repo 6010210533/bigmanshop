@@ -1,0 +1,53 @@
+<!--
+  Generated template for the Orderpizza4Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>พิซซ่าผัก</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="bg-style">
+    <H3 align = "center">พิซซ่าผัก</H3>
+    <img  src="../../assets/imgs/pizza4.jpg" alt="Pizza" height="200" width="400">
+    <H3 align = "center">เลือกขนาด</H3>
+    <ion-list radio-group [(ngModel)]="shoppingItem1.itemSizep">
+      <ion-item>
+        <ion-label>ขนาดเล็ก</ion-label>
+        <ion-radio value="ขนาดเล็ก" ></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>ขนาดกลาง</ion-label>
+        <ion-radio value="ขนาดกลาง" ></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>ขนาดใหญ่</ion-label>
+        <ion-radio value="ขนาดใหญ่" ></ion-radio>
+      </ion-item>
+    </ion-list>
+    <H3 align = "center">เลือกขอบ</H3>
+    <ion-list radio-group [(ngModel)]=" shoppingItem1.itemEdgep">
+      <ion-item>
+        <ion-label>ขอบบาง</ion-label>
+        <ion-radio value="ขอบบาง" ></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>ขอบหนา</ion-label>
+        <ion-radio value="ขอบหนา"  ></ion-radio>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+          <ion-item>
+            <ion-label>จำนวน</ion-label>
+            <ion-input type="text" [(ngModel)]="shoppingItem1.itemAmoutp" value="1" > ชิ้น</ion-input>
+          </ion-item>
+      </ion-list>
+      <p align ="right"><button class="btn-style" ion-button block (click)="Orderpizza(shoppingItem1)">ใส่ตะกร้า</button></p>
+
+</ion-content>

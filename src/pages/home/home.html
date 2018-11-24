@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      หน้าหลัก
+    </ion-title>
+  </ion-navbar>
+    
+</ion-header>
+
+<ion-content padding class="bg-style">
+  <H1>ยินดีต้อนรับ</H1> 
+  <H5>Bigman Restaurant</H5> 
+  <H6 align ="center">เมนูเเนะนำ</H6> 
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <div (click)="nextpizza1()">
+              <img src="../../assets/imgs/pizza1.jpg" >
+                </div>
+      </ion-col>
+      <ion-col>
+          <div (click)="nextpizza2()">
+              <img src="../../assets/imgs/pizza2.jpg" >
+                </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+          <div (click)="nextpizza3()">
+              <img src="../../assets/imgs/pizza3.jpg" >
+                </div>
+      </ion-col>
+      <ion-col>
+          <div (click)="nextpizza4()">
+              <img src="../../assets/imgs/pizza4.jpg" >
+                </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <H6 align ="center">ประเภท</H6>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <div (click)="nextpizza()">
+        <img src="../../assets/imgs/pizza6.jpg" >
+          </div>
+
+      </ion-col>
+      <ion-col>
+          <div (click)="nextdrink()">
+        <img src="../../assets/imgs/softdrink.jpg">
+          </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <button class="btn-style" ion-button block (click) = "onClickbasket()">ตะกร้า</button>
+</ion-content>

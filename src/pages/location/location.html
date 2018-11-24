@@ -1,0 +1,41 @@
+<!--
+  Generated template for the LocationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ที่อยู่</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="bg-style"> 
+
+    <ion-list>
+        <ion-item>
+          <ion-label color="primary">ชื่อ</ion-label>
+          <ion-input [(ngModel)]="address.itemName"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary">นามสกุล</ion-label>
+            <ion-input [(ngModel)]="address.itemLastname"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label color="primary">E-mail</ion-label>
+              <ion-input [(ngModel)]="address.itemEmail"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label color="primary">ที่อยู่</ion-label>
+                <ion-input [(ngModel)]="address.itemAddress"></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label color="primary">เบอร์โทรศัพท์</ion-label>
+                  <ion-input [(ngModel)]="address.itemTel"></ion-input>
+                </ion-item>
+                <button ion-button class="btn-style" block (click)="setAddress()">ยืนยันที่อยู่</button>
+      </ion-list>
+</ion-content>
